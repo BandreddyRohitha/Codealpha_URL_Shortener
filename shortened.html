@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shortened URL</title>
+</head>
+<body>
+    <h1>Shortened URL</h1>
+    <p>Original URL: <a href="{{ original_url }}">{{ original_url }}</a></p>
+    <p>Shortened URL: <a href="{{ url_for('redirect_to_url', short_url=short_url) }}">{{ request.host }}/{{ short_url }}</a></p>
+</body>
+</html>
